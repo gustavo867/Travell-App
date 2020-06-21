@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, View, StatusBar } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View, ScrollView } from 'react-native';
 import { colors } from '../../styles';
 import Header from './components/Header';
 import Bookmark from './components/Bookmark';
@@ -11,8 +12,9 @@ import Extras from './components/Extras';
 
 export default function App() {
   return (
+    <ScrollView>
     <View style={styles.container}>
-        <StatusBar barStyle="light-content"/>
+       <StatusBar style="light" />
         <Header/>
 
         <View>
@@ -24,6 +26,7 @@ export default function App() {
           <Extras/>
         </View>
     </View>
+    </ScrollView>
   );
 }
 

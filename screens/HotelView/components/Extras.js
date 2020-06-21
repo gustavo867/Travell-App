@@ -25,7 +25,7 @@ export default function Extras() {
 
       <View style={{ marginTop: 32, marginBottom: -50 }}>
         <TouchableOpacity style={styles.filterButton}>
-          <Text style={{ fontweight: '700', color: '#fff' }}>Filter</Text>
+          <Text style={{ fontWeight: '700', color: '#fff' }}>Filter</Text>
         </TouchableOpacity>
       </View>
      </View>
